@@ -1,0 +1,25 @@
+{
+  "name": "alatautas-mob",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dmitrii Polianskii"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "normalize.css#^6.0.0",
+    "jquery": "^3.2.1",
+    "flipclock": "^0.7.7",
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "^1.6.0"
+  }
+}

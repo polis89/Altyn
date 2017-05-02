@@ -1,0 +1,444 @@
+@import variables
+
+*::-webkit-input-placeholder 
+  color: #000
+  font-family: $serif-r
+*:-moz-placeholder 
+  color: #000
+  font-family: $serif-r
+*::-moz-placeholder 
+  color: #000
+  font-family: $serif-r
+*:-ms-input-placeholder 
+  color: #000
+  font-family: $serif-r
+
+.clearfix
+	content: ""
+	clear: both
+	display: block
+
+
+h4
+	text-transform: uppercase
+	text-align: center
+	font-family: "MuseoSansBlack"
+	font-size: 1em
+
+h5
+	font-size: 1.1em
+	margin-top: 6px
+	margin-bottom: 11px
+	font-family: "MuseoSansBlack"
+	color: $accent-color
+	text-align: center
+	text-transform: uppercase
+
+span.accent
+	color: $accent-color
+
+input
+	box-sizing: border-box
+	outline: none;
+	section.sale &,
+	section.choose &
+		width: 100%
+		height: 35px
+		border-radius: 20px
+		&[type="button"]
+			transition: all 0.3s
+			background-color: $accent-color
+			border: none
+			color: #fff
+			text-transform: uppercase
+			font-family: $serif-r
+			cursor: pointer
+			&:hover
+				background-color: $accent-color-dark
+			&:active
+				background-color: $accent-color-light
+		&[type="text"]
+			margin-bottom: 6px
+			background-color: #fff
+			border: none
+			color: #000
+			text-align: center
+form
+	p
+		font-family: $b, sans-serif
+		margin-top: 5px
+		margin-bottom: 0
+		font-size: 0.6em
+		text-align: center
+
+
+section.sale
+	background-color: #ffcc00
+	text-align: center
+	padding-top: 15px
+	background-image: url(../img/uzor1.png)
+	background-size: 25px 60px
+	background-repeat: repeat-y
+	background-position: 6px 0
+	h3
+		display: none
+	.clock_desc
+		margin: 0
+		text-transform: uppercase
+		font-family: $serif-r
+		font-weight: normal
+		font-size: 0.8em
+		padding-top: 6px
+		margin-bottom: 6px
+		float: left
+		width: 180px
+		&:after
+			display: block
+			content: ""
+			clear: both
+		@include small{position: relative; right: -7px; width: 170px; text-align: right;float: right}
+	
+
+	.sale_pr
+		font-family: $serif-b, sans-serif
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 3.5em
+		float: left
+		width: 47%
+		text-align: center
+		padding-top: 10px
+		@include small{position: relative; left: 8px;width: 35%; font-size: 2.8em; text-align: right}
+	.flip-clock-dot
+		display: none
+	.flip-clock-label
+		bottom: -1.5em
+		top: auto
+		font-family: $r
+		text-transform: uppercase
+		font-size: 2.2em
+		text-align: center
+	.flip-clock-divider.minutes .flip-clock-label
+		right: -106px
+	.flip-clock-divider.seconds .flip-clock-label
+		right: -112px
+
+	.flip-clock-wrapper
+		margin: 0 auto
+		float: left
+		width: 160px	
+		transform: scale(0.35)
+		transform-origin: top left
+		white-space: nowrap
+		@include small{width: 150px; transform: scale(0.3); float: right;}
+	.flip-clock-divider
+		width: 35px
+		float: none
+		display: inline-block
+		&.days
+			width: 0
+	.flip
+		white-space: nowrap
+		float: none
+		margin-right: -16px
+		display: inline-block
+	.flip-clock-wrapper ul li a div div.inn
+		color: #fff
+		background: #1c1c1c
+		font-family: $r
+	.form_desc
+		margin-top: 0
+		padding-top: 0
+		color: #000 
+		display: block
+		float: none
+	form
+		position: relative
+		top: -30px 
+		padding-left: 30px
+		.form_desc
+			font-size: 0.8em
+			font-family: $serif-r
+			text-transform: uppercase
+			margin-bottom: 8px
+			@include small{font-size: 0.7em;}
+	
+
+section.features
+	padding-bottom: 25px
+	padding-top: 20px
+	background-color: #eeeeed
+	background-image: url(../img/background_feature.png)
+	background-repeat: no-repeat
+	background-position: right 0
+	background-size: contain
+	h2
+		color: #000
+		margin-top: 0
+		padding-top: 0
+		font-size: 1.3em
+		padding-bottom: 20px
+	.feature
+		background-image: url(../img/feature.png)
+		background-repeat: no-repeat
+		background-position: left 0
+		background-size: 48px
+		width: 50%
+		overflow: visible
+		float: left
+		min-height: 60px
+		h4
+			text-align: left
+			font-family: $r
+			font-weight: normal
+			font-size: 0.82em
+			line-height: 1.1em
+			margin-top: 0
+			padding-left: 56px
+			padding-right: 2px
+			padding-top: 3px
+			@include small{font-size: 0.6em; padding-left: 50px;}
+
+section.for_men
+	background-image: url(../img/background_formen.jpg)
+
+section.for_women
+	background-image: url(../img/background_forwomen.jpg)
+
+section.for_men,
+section.for_women,
+section.school
+	background-size: cover
+	color: #fff
+	padding-bottom: 20px
+	h2
+		font-family: $serif-b
+		text-align: left
+		padding-top: 30px
+	p
+		font-size: 0.85em
+
+section.choose
+	padding-bottom: 30px
+	position: relative
+	.book
+		width: 150px
+		position: absolute
+		top: -20px
+		@include small{width: 100px; top: -14px;}
+	h2
+		font-size: 1.65em
+		padding-top: 26px
+		padding-left: 160px
+		float: right
+		color: #002f4e
+		font-family: $serif-b
+		@include small{font-size: 1.05em; padding-left: 108px;}
+		span
+			color: #000
+	p
+		font-size: 0.9em
+		padding-top: 40px
+		&.ital
+			padding-top: 10px
+			color: #001B3D
+			font-size: 1.2em
+			float: right
+			@include small{font-size: 0.9em; padding-top: 2px;}
+	form
+		p
+			padding-top: 0
+		input[type=text]
+			border: solid 2px #000
+
+section.school
+	background-image: url(../img/background-school.jpg)
+	color: #000
+	h2
+		color: #000
+
+section.clients
+	padding-bottom: 75px
+	padding-top: 10px 
+	background: url("../img/background_clients_up.png") top no-repeat, url("../img/background_clients_down.png") bottom no-repeat
+	background-size: contain, contain
+	background-color: #eeeeed   
+	h2
+		color: #000
+		font-family: $serif-b
+		font-size: 1.6em
+	.client
+		padding-top: 15px
+		img
+			width: 40%
+			display: block
+			margin: 0 auto
+		h5
+			text-transform: none
+			color: #000
+			font-family: $serif-r
+			font-weight: normal
+			font-size: 0.9em
+			padding-top: 3px
+			padding-bottom: 0
+			margin-bottom: 0
+
+section.sertificates
+	background-color: #eeeeed    
+	h2
+		color: #000
+		font-family: $serif-b
+	.car_cont
+		padding: 20px 10% 0
+		background-image: url(../img/bg-sertif-left.png), url(../img/bg-sertif-right.png)
+		background-position: left, right 
+		background-repeat: no-repeat
+		background-size: contain, contain
+		.item
+			margin: 10px
+		.slick-prev,
+		.slick-next
+			top: 40%
+			width: 40px
+			height: 40px
+			z-index: 2
+		.slick-prev
+			background-image: url(../img/arr-left.png)
+			background-size: cover
+		.slick-next
+			background-image: url(../img/arr-right.png)
+			background-size: cover
+			
+
+
+section.questions
+	background-color: #ffcc00
+	padding-bottom: 35px
+	padding-top: 16px
+	h2
+		color: #000
+		font-family: $serif-b
+	.ital
+		font-family: $r
+		color: #003864
+		text-transform: lowercase
+		font-size: 0.7em
+	form
+		font-size: 1em
+		margin-top: 2px
+		input,
+		textarea
+			box-sizing: border-box
+			width: 100%
+			padding: 8px
+			padding-left: 25px
+			background-color: #fff
+			border-radius: 40px
+			font-size: 1.4em
+			font-family: $r
+		input[type="text"]
+			margin-bottom: 8px
+			outline: none;
+			placeholder: #000
+			border: solid 2px #D3C797
+			height: 70px
+		textarea
+			background-color: #fff
+			border: solid 2px #D3C797
+			outline: none;
+			color: #282828
+			font-size: 1em
+			margin-bottom: 8px
+			font-size: 1.4em
+			padding-top: 20px
+		p
+			margin-top: 10px
+			text-align: center
+			color: #003864
+			font-size: 0.75em
+			font-family: $r
+		input[type="button"]
+			background-color: $accent-color
+			color: #fff
+			height: 80px
+			border: none
+			text-transform: uppercase
+			font-family: $r
+			font-size: 1.5em
+			padding: 15px 0
+			border-radius: 40px
+			transition: all 0.4s
+			&:hover
+				background-color: $accent-color-dark
+		input::-webkit-input-placeholder 
+			color: #282828
+			font-family: $r
+		input:-moz-placeholder 
+			color: #282828
+			font-family: $r
+		input::-moz-placeholder 
+			color: #282828
+			font-family: $r
+		input:-ms-input-placeholder 
+			color: #282828
+			font-family: $r
+footer
+	background-color: $accent-color
+	background-image: url(../img/bg_footer.png)
+	background-position: 0 -35px 
+	background-repeat: no-repeat
+	background-size: contain
+	text-align: center
+	padding-top: 15px
+	padding-bottom: 20px
+	p
+		padding-bottom: 0
+		margin-bottom: 0
+	.soc
+		font-size: 2em
+		margin-top: 20px
+		.social
+			width: 55px
+			height: 55px
+			display: inline-block
+			border-radius: 50%
+			background-color: #BFDEED
+			transition: all 0.4s
+			@include small{width: 45px;height: 45px;font-size: 0.8em;}
+			&:hover
+				background-color: #697585
+				a
+					color: #fff
+		a
+			display: block
+			color: #001F32
+			padding-top: 10px
+			@include small{padding-top: 7px;}
+	p.adress
+		color: #000
+		max-width: 80%
+		margin: 30px auto 25px
+		font-family: $serif-r
+		font-size: 1.1em
+	.phone
+		margin-top: 16px
+		font-size: 3em
+		font-family: $serif-r	
+		@include small{font-size: 2em}
+	.autor
+		color: #fff
+		padding: 0
+		margin: 20px 0
+		font-size: 0.9em
+		font-family: $serif-r
+		.under
+			text-decoration: underline
+
+
+
+
+
+
+
+
+
